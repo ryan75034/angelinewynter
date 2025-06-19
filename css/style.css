@@ -31,7 +31,7 @@ img {
   display: block;
 }
 
-/* === Body Styles === */
+                                        /* === Video Styles === */
 
 #hero-video {
   position: absolute;
@@ -102,7 +102,7 @@ img {
   text-decoration: underline;
 }
 
-/* === Hero Section Styles === */
+                                        /* === Hero Section Styles === */
 #hero {
                     /* background-color: rgba(134, 80, 80, 0.5); Semi-transparent overlay */
   position: relative;
@@ -276,7 +276,7 @@ img {
   margin-bottom: 1em;
 }
 
-/* === Certifications Styles === */
+                                  /* === Certifications Styles === */
 
 #certifications-section {
   max-width: 1200px;
@@ -330,7 +330,7 @@ img {
   background-color: #ddd; /* fallback color if image not loaded */
 }
 
-/* === Footer Styles === */
+                                   /* === Footer Styles === */
 #site-footer {
   background-color: #CBBFA5;
   color: #fff;
@@ -360,4 +360,86 @@ img {
 
 .footer-icons a img:hover {
   transform: scale(1.1);
+}
+
+
+
+
+
+                                /* === Responsive Design === */
+@media screen and (max-width: 1024px) {
+  #hero {
+    padding: 10em 1em 0 1em;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .keySkills-grid,
+  .certifications-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .certifications-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  #about-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-text {
+    order: 2;
+  }
+
+  .about-image {
+    margin: 2em auto;
+    max-width: 80%;
+  }
+
+  .keySkills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-buttons a {
+    font-size: 0.9rem;
+    padding: 0.5em 1em;
+  }
+
+  #logo {
+    height: 30px;
+  }
+
+  .footer-icons a img {
+    width: 24px;
+    height: 24px;
+  }
 }
