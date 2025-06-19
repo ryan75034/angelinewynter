@@ -48,7 +48,7 @@ img {
   height: 100%;
   object-position: center 143%;
   object-fit: cover;
-  opacity: 0.8; /* Adjusts the transparency of the video */
+  opacity: 0.9; /* Adjusts the transparency of the video */
 }
 
 /* .video-overlay {
